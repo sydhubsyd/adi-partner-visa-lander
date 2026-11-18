@@ -1,4 +1,5 @@
 import { CheckCircle, Phone, Clock, UserCheck, Star } from 'lucide-react'
+import ThankYouVideo from '../components/ThankYouVideo'
 
 const GHL_CALENDAR_EMBED = 'YOUR_GHL_CALENDAR_EMBED_URL' // Replace with actual GHL calendar widget URL
 
@@ -35,6 +36,9 @@ export default function ThankYou() {
             Eli Bekker — your consultation is completely free.
           </p>
         </div>
+
+        {/* Thank-you video: the same message, animated. Silent, so the page copy still carries it. */}
+        <ThankYouVideo className="mb-10" />
 
         {/* Why book now — persuasion section */}
         <div className="bg-blue-light border border-blue-muted rounded-xl p-6 mb-10">
